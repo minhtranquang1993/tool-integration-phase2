@@ -1,0 +1,16 @@
+{
+    "tokens": {
+        "classic": {
+            "env_var": "GITHUB_TOKEN_CLASSIC",
+            "_comment": "Personal access token (classic) — priority 1"
+        },
+        "finegrained": {
+            "env_var": "GITHUB_TOKEN_FINEGRAINED",
+            "_comment": "Fine-grained personal access token — fallback"
+        }
+    },
+    "repo_overrides": {
+        "minhtranquang1993/private-repo": "classic",
+        "_comment": "Map specific owner/repo to preferred token alias"
+    }
+}

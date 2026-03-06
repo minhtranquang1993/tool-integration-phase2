@@ -1,0 +1,31 @@
+{
+    "suppress_patterns": [
+        "ran\\s+(ok|successfully)",
+        "no\\s+output",
+        "exit\\s+code\\s*[:=]?\\s*0\\b",
+        "heartbeat\\s+(ok|ping|alive)",
+        "health\\s*check\\s*(ok|passed|✅)",
+        "cron\\s+completed?\\s+(ok|success)",
+        "script\\s+finished\\s+(ok|successfully)",
+        "all\\s+checks?\\s+pass",
+        "nothing\\s+to\\s+(do|report|update)",
+        "0\\s+errors?,?\\s+0\\s+warnings?"
+    ],
+    "alert_patterns": [
+        "\\bERROR\\b",
+        "\\bCRITICAL\\b",
+        "\\bFATAL\\b",
+        "disk\\s+(full|space)",
+        "\\bOOM\\b",
+        "out\\s+of\\s+memory",
+        "connection\\s+(refused|timeout|failed)",
+        "service\\s+(down|unavailable|crashed)",
+        "exit\\s+code\\s*[:=]?\\s*[1-9]",
+        "traceback",
+        "exception"
+    ],
+    "pass_keywords": [
+        "user_query",
+        "user_request"
+    ]
+}

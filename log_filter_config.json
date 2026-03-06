@@ -1,0 +1,47 @@
+{
+    "suppress_patterns": [
+        "ran\\s+(ok|successfully)",
+        "no\\s+output",
+        "exit\\s+code\\s*[:=]?\\s*0\\b",
+        "heartbeat\\s+(ok|ping|alive)",
+        "health\\s*check\\s*(ok|passed|✅)",
+        "cron\\s+completed?\\s+(ok|success)",
+        "script\\s+finished\\s+(ok|successfully)",
+        "all\\s+checks?\\s+pass",
+        "nothing\\s+to\\s+(do|report|update)",
+        "0\\s+errors?,?\\s+0\\s+warnings?",
+        "^\\s*ok\\s*$",
+        "^\\s*done\\.?\\s*$",
+        "\\[?atom_\\d+\\]?\\s*✅",
+        "\\[?save_db\\]?\\s*✅",
+        "\\[AoT\\]",
+        "^\\s*$"
+    ],
+    "alert_patterns": [
+        "❌",
+        "⚠️ KPI",
+        "⚠️ Lỗi",
+        "\\bFAIL\\b",
+        "anomaly",
+        "\\bERROR\\b",
+        "\\bCRITICAL\\b",
+        "\\bFATAL\\b",
+        "traceback",
+        "exception",
+        "exit\\s+code\\s*[:=]?\\s*[1-9]"
+    ],
+    "pass_keywords": [
+        "📊",
+        "🔵",
+        "🎵",
+        "🟢",
+        "📌",
+        "🩺",
+        "💰",
+        "🎯",
+        "▸",
+        "BÁO CÁO",
+        "TỔNG KẾT",
+        "DATA HEALTH"
+    ]
+}
